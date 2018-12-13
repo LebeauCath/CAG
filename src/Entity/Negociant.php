@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Negociant
@@ -25,6 +26,13 @@ class Negociant
      * @var string
      *
      * @ORM\Column(name="nomnegociant", type="string", length=50, nullable=false)
+     * @Assert\NotBlank
+     * @Assert\Length(
+     *      min = 5,
+     *      max = 50,
+     *      minMessage = "Taille minimale du nom : 5 caractères",
+     *      maxMessage = "Taille maximale du nom : 50 caractères"
+     * )
      */
     private $nomnegociant;
 
