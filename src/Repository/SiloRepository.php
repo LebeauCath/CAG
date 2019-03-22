@@ -18,4 +18,19 @@ class SiloRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Silo::class);
     }
+
+    public function getLesSilos($cereale) {
+        $lesSilos = $this->findBy(
+            array('cereale' => $cereale)
+        );
+       // $lesSilos = $this->findByCereale($cereale);
+        /*$query = $this->_em->createQuery('SELECT  FROM App\Entity\Silo s WHERE c.negociant = ?1');
+        $query->setParameter(1, $negociant);
+        $dd = $query->getSingleScalarResult();
+        return $dd;*/
+
+        //$lesSilos = $this->findAll();
+        dump($cereale);
+        return $lesSilos;
+    }
 }

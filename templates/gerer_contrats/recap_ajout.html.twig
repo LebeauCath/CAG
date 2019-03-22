@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+{% block title %} Gestion des contrats{% endblock %}
+{% block contenu %}
+
+    <div id="contenu">
+        <h2>Gestion des contrats</h2>
+
+        {% for message in app.flashes('notice') %}
+            <div class="info">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+        <a href="{{ path('gerer_contrats_lister') }}">
+            Gestion des contrats
+        </a>&nbsp;
+
+        <a href="{{ path('gerer_contrats_ajouter') }}">
+            Ajouter un contrat
+        </a> &nbsp;
+
+        {% if (leContrat != NULL) %}
+            {% set id = leContrat.nocontrat %}
+            {% set date = leContrat.datecontrat | date('d/m/Y') %}
+            {% set cereale = leContrat.getCereale().getCodecereale() ~' - '~ leContrat.getCereale().getVariete() %}
+            {% set negociant = leContrat.getNegociant().getNonegociant()~' - '~leContrat.getNegociant().getNomnegociant() %}
+            {% set qtecde = leContrat.qtecde %}
+            {% set prix = leContrat.prixcontrat %}
+            {% set montant = qtecde * prix %}
+
+            <a href="{{ path('gerer_contrats_modifier',
+                {'id' : id}
+            ) }}">
+                Modifier le contrat
+            </a>&nbsp;
+            <br/><br/>
+            <table>
+                <tr>
+                    <td class="h-entete">ID</td>
+                    <td class="h-valeur">{{ id }}</td>
+                </tr>
+                <tr>
+                    <td class="h-entete">Date</td>
+                    <td class="h-valeur">{{ date }}</td>
+                </tr>
+                <tr>
+                    <td class="h-entete">Céréale</td>
+                    <td class="h-valeur">{{ cereale }}</td>
+                </tr>
+                <tr>
+                    <td class="h-entete">Négociant</td>
+                    <td class="h-valeur">{{ negociant }}</td>
+                </tr>
+
+                <tr>
+                    <td class="h-entete">Prix</td>
+                    <td class="h-valeur">{{ prix |number_format(2, '.', ' ') }}</td>
+                </tr>
+                <tr>
+                    <td class="h-entete">Quantité</td>
+                    <td class="h-valeur">{{ qtecde }}</td>
+                </tr>
+
+                <tr>
+                    <td class="h-entete">Montant</td>
+                    <td class="h-valeur">{{ montant|number_format(2, '.', ' ') }}</td>
+                </tr>
+            </table>
+
+        {% endif %}
+    </div>
+{% endblock %}

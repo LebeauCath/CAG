@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+{% block title %} Gestion des négociants{% endblock %}
+{% block contenu %}
+    <div id="contenu">
+        <h2>Gestion des négociants</h2>
+        <a href="{{ path('gerer_negociants_lister') }}">
+            Gestion des négociants
+        </a> &nbsp;
+
+        {%if (leNegociant != NULL) %}
+            {% set id = leNegociant.getNonegociant() %}
+            {% set nom = leNegociant.getNomnegociant() %}
+            {% set adresse = leNegociant.getAdrnegociant() %}
+            {% set nbContrats = contratsDuNegociant | length %}
+        {% endif %}
+
+        <a href="{{path('gerer_negociants_modifier',{'id' : id })}}">
+            Modifier le négociant
+        </a>&nbsp;
+
+        {%if (nbContrats == 0) %}
+            <a href="{{path('gerer_negociants_supprimer',{'id' : id })}}">
+                Supprimer le négociant
+            </a>
+        {% endif %}
+        <br /><br />
+
+        <fieldset>
+            <legend>Consulter un client</legend>
+            <table>
+                <tr>
+                    <td class="h-entete">ID</td>
+                    <td class="h-valeur">{{ id }} </td>
+                </tr>
+                <tr>
+                    <td class="h-entete">Nom</td>
+                    <td class="h-valeur">{{ nom }}<td>
+                </tr>
+                <tr>
+                    <td class="h-entete">Adresse</td>
+                    <td class="h-valeur">{{ adresse }}<td>
+                </tr>
+                <tr><td>&nbsp;</td></tr>
+                <tr>
+                    <td class="h-entete">Nombre de contrats</td>
+                    <td class="h-valeur">{{ nbContrats }}<td>
+                </tr>
+                <tr>
+                    <td class="h-entete">Chiffre d'affaire</td>
+                    <td class="h-valeur">{{ CA }} € <td>
+                </tr>
+                <tr>
+                    <td class="h-entete">Dernier contrat</td>
+                    <td class="h-valeur">
+                        {% if nbContrats > 0 %}
+                           {{ derniereDate | date('d-m-Y')}}
+                        {% endif %}
+                    <td>
+                </tr>
+            </table>
+            {%if (nbContrats > 0) %}    <br />
+                <a href="{{path('gerer_negociants_consulter', {'id' : id,'option' : 'afficherContrats' })}}">
+                    Contrats
+                </a> &nbsp;
+                <a href="{{path('gerer_negociants_consulter', {'id' : id,'option' : 'afficherLivraisons' })}}">
+                    Livraisons
+                </a> &nbsp;
+            {% endif %}
+
+            {% if (option == 'afficherContrats') %}
+                {% include 'gerer_negociants/contratsDuNegociant.html.twig' %}
+            {% else %}
+                {% if (option == 'afficherLivraisons') %}
+                    {% include 'gerer_negociants/livraisonsDuNegociant.html.twig' %}
+                {% endif %}
+            {% endif %}
+        </fieldset>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,52 @@
+
+{% extends 'base.html.twig' %}
+{% block title %} Gestion des négociants{% endblock %}
+{% block contenu %}
+
+    <div id="contenu">
+        <h2>Gestion des négociants</h2>
+        <a href="{{ path('gerer_negociants_lister') }}">
+            Gestion des négociants
+        </a>
+        <br /><br />
+
+        {# Générer la balise form et ses attributs #}
+        {{ form_start(formNegociant) }}
+        <div class="corpsForm">
+            <fieldset>
+                <legend>Modifier un négociant</legend>
+                <table>
+                    <tr>
+                        <td  colspan ="2"> <span class = 'erreur'>{{ form_errors(formNegociant.nomnegociant)}}</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form_label(formNegociant.nomnegociant)}}
+                        </td>
+                        <td>
+                            {{ form_widget(formNegociant.nomnegociant)}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form_label(formNegociant.adrnegociant)}}
+                        </td>
+                        <td>
+                            {{ form_widget(formNegociant.adrnegociant)}}
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+        <div class="piedForm">
+            <p>
+                <input id="cmdFonction" name="cmdFonction"
+                       type="submit"
+                       value="Modifier" size="15"
+                />
+            </p>
+        </div>
+        {{ form_end(formNegociant) }}
+    </div>
+{% endblock %}
+

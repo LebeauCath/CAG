@@ -1,0 +1,31 @@
+<div id="objectList">
+    {% if (lesLivraisons | length != 0) %}
+        <h3>Livraisons</h3>
+        <table>
+            <tr>
+                <th>Contrat</th>
+                <th>Date</th>
+                <th>Céréale</th>
+                <th>Quantité</th>
+                <th>Silo</th>
+            </tr>
+            {# affichage des lignes du tableau #}
+            {% set n = 0 %}
+            {% for uneLivraison in lesLivraisons %}
+                {% if ((n % 2) == 1) %}
+                    <tr class="impair">
+                {% else %}
+                    <tr class="pair">
+                {% endif %}
+                    <td>{{ uneLivraison.getContrat().getNocontrat() }}</td>
+                    <td>{{ uneLivraison.getDateliv() | date ('d-m-Y') }}</td>
+                    <td>{{ uneLivraison.getContrat().getCereale().getCodecereale() }}</td>
+                    <td>{{ uneLivraison.getQteliv() }}</td>
+                    <td>{{ uneLivraison.getSilo().getCodesilo() }}</td>
+                </tr>
+                {% set n = n+1 %}
+            {% endfor %}
+        </table>
+    {% endif %}
+</div>
+

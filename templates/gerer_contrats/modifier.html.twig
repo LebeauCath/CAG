@@ -1,0 +1,132 @@
+{% extends 'base.html.twig' %}
+{% block title %} Gestion des contrats{% endblock %}
+{% block contenu %}
+
+    <div id="contenu">
+        {% for message in app.flashes('error') %}
+            <div class="erreur">
+                {{ message }}
+            </div>
+        {% endfor %}
+        <h2>Gestion des contrats</h2>
+        <a href="{{ path('gerer_contrats_lister') }}">
+            Gestion des contrats
+        </a>&nbsp;
+        <br/><br/>
+        {# Générer la balise form et ses attributs #}
+        {# En mode production désactivation des validations html : test des contrôles côté serveur #}
+        {{ form_start(formContrat, {'attr': {'novalidate': 'novalidate'}}) }}
+
+        <div class="corpsForm">
+            <fieldset>
+                <legend>Modifier un contrat</legend>
+                <table>
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formContrat) }} </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtID">
+                                Numéro
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="txtID"
+                                   class="readOnly"
+                                   name="txtID"
+                                   size="10"
+                                   value= {{ leContrat.getnoContrat() }}
+                                   readonly="readonly"
+                            />
+                        </td>
+                        {#
+                                                <td>
+                                                    {{ form_label(formContrat.nocontrat) }}
+                                                </td>
+                                                <td>
+                                                    {{ form_widget(formContrat.nocontrat, {'disabled': 'disabled'}) }}
+                                                </td>#}
+                    </tr>
+                    <tr>
+                        {#  <td>
+                              {{ form_label(formContrat.negociant) }}
+                          </td>
+                          <td>
+
+                              {{ form_widget(formContrat.negociant,  {'disabled': 'disabled'}
+                              ) }}
+
+                        </td>#}
+                        <td>
+                            <label for="txtNegociant">
+                                Négociant
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="txtNegociant"
+                                   class="readOnly"
+                                   name="txtNegociant"
+                                   size="50"
+                                   value="{{ leContrat.getNegociant().getNomnegociant() }}"
+                                   readonly="readonly"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formContrat.datecontrat) }}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form_label(formContrat.datecontrat) }}
+                        </td>
+                        <td>
+                            {{ form_widget(formContrat.datecontrat) }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formContrat.cereale) }}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form_label(formContrat.cereale) }}
+                        </td>
+                        <td>
+                            {{ form_widget(formContrat.cereale) }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formContrat.qtecde) }}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form_label(formContrat.qtecde) }}
+                        </td>
+                        <td>
+                            {{ form_widget(formContrat.qtecde) }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formContrat.prixcontrat) }}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form_label(formContrat.prixcontrat) }}
+                        </td>
+                        <td>
+                            {{ form_widget(formContrat.prixcontrat) }}
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+        <div class="piedForm">
+            <p>
+                <input id="cmdFonction" name="cmdFonction"
+                       type="submit"
+                       value="Modifier" size="15"
+                />
+            </p>
+        </div>
+        {{ form_end(formContrat) }}
+    </div>
+{% endblock %}

@@ -1,0 +1,325 @@
+body {
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+#page {
+  background-color:white;
+  width : 65%;
+  margin : auto ;
+  border : 0.2em solid black;
+  padding : 0.1em;
+}
+
+#entete {
+    color : #980101;
+    height: 154px;
+    padding: 0em;
+    border-collapse: separate;
+}
+
+#pied {
+    clear : both;
+    border : solid 0.2em #980101;
+    margin-left : 18%;
+    margin-top : 1em;
+    padding:0.4em;
+    padding: 0.2em;
+    border-collapse: separate;
+}
+
+#nav {	
+    color: rgb(96,96,96);
+    float: left;
+    width: 16%;
+}
+
+#menuGauche {
+    padding: 1em;
+    margin-top : 0.8em;
+    margin-bottom: 1em;
+    background-color: #f1f2f4;
+}
+
+#contenu {
+    border: none;
+    background-color: white;
+    margin-left: 18%;
+    /* permet de fixer une hauteur mini sur les navigateurs modernes */
+    min-height: 27em;
+    /* pour obtenir le même effet sur IE, sachant que si le contenu dépasse, 
+    il "poussera" la hauteur en ne respectant pas la norme. 
+    On se joue de ses lacunes ;-)
+    */
+    height: 27em;
+}
+
+/* pour rétablir le mauvais effet sur les nav. modernes */
+html>body #contenu {
+    height: auto;
+}
+
+/* style à appliquer à la balise ul d'identifiant menulist */
+ul#menuList {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 98%;
+    font-size: 1em;
+}
+
+/* style à appliquer aux éléments de la balise ul d'identifiant menulist */
+ul#menuList li {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* apparences des liens dans listes et sous-listes non numérotées */
+ul#menuList a {
+    padding: 0.5em;
+    color: #4582B4;
+    display: block;
+    text-decoration: none;
+    width: 80%;
+}
+
+ul#menuList a:hover {
+    background: #e0e0e0;
+    color: #4582B4;
+}
+
+#entete h1 {
+    margin: 1em;
+    margin-left: 6em;
+    font-size: x-large;
+    text-align: center;
+}
+
+#contenu pre {
+    width: 95%;
+    overflow: scroll;
+}
+
+#contenu h2 {
+    font-size: large;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.corpsForm {
+    margin-bottom: 0em;
+    width: 95%;
+}
+
+.piedForm {
+    text-align: left ;
+    margin-top: 0em;
+}
+
+a {
+    color: #4582B4;
+}
+
+a:hover {
+    color: #cd5c5c;
+}
+
+h1, h2, h3 {
+    color: #4582B4;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.2em;
+    background: #e0e0e0;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 1em;
+    background-color: #f1f2f4;
+    padding: 0.5em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+table {
+    font-size: 1em;
+}
+
+fieldset {
+    margin-bottom: 10px;
+    border: #ccc 1px solid;
+}
+
+fieldset legend {
+    padding: 0 10px 0 10px;
+    color: #666;
+}
+
+fieldset:hover {
+    border-color: #666;
+}
+
+label {
+    color: Gray;
+    width: 120px;
+}
+
+label.form , label.formError {
+    display: block;
+    max-width: 160px;
+    float: left;
+    margin-left: 10px;
+}
+
+label.formError {
+    color: red;
+}
+
+label.radio {
+    display: inline;
+}
+
+label:hover {
+    color: #330066;
+}
+
+input[type=radio], input[type=text], input[type=password], 
+input[type=checkbox], select, option, textarea {
+    margin-left: 30px;
+}
+
+input[type=submit], input[type=reset] {
+    margin-top: 15px;
+    width: 120px;
+    cursor: pointer;
+}
+
+input[type=text].readOnly {
+    color: gray;
+}
+
+.erreur, .info {
+    display: block;
+    margin: 15px 0 15px 0;
+    background-color: #f1f2f4;
+    padding: 5px;
+    width: 50%;
+}
+
+.erreur {
+    color: red;
+
+}
+
+.info {
+    color: #4582B4;
+}
+
+span.erreur li {
+    list-style-type: none;
+}
+
+span.active {
+    color: #4582B4;
+    font-weight: bold;
+}
+
+table.recap {
+    width: 66%;
+} 
+
+td.h-entete {
+    background-color: #e0e0e0;
+    color: #4582B4;
+    font-weight: bold;
+    width: 20%;
+    padding: 1px 10px 1px 5px;
+}
+
+td.h-valeur {
+    background-color: #f0f0f0;
+    color: #4582B4;
+    padding: 1px 10px 1px 5px;
+    width: 80%;
+}
+
+#objectList {
+    margin : 10px 0 10px 0;
+}
+
+#objectList table {
+    width: 80%;
+}
+
+#objectList th {
+    text-align: left;
+    background-color: #e0e0e0;
+    color: #4582B4;
+}
+
+#objectList tr.impair {
+    background-color: #f0f0f0;
+}
+
+#objectList tr.pair {
+    background-color: #fafafa;
+}
+
+#objectList select {
+    margin-left: 10px;
+    width: 250px;
+}
+
+#crudButtons {
+    margin: 10px 0 0 0;
+}
+
+#crudButtons input[type=submit] {
+    margin-top: 1px;
+    margin-left: 10px;
+}
+
+span.readOnly {
+    margin-left: 30px;
+}
+
+#okCancelButtons {
+    margin-left: 5px;
+}
+
+#okCancelButtons input[type=submit] {
+    margin-left: 5px;
+}
+
+#Header {
+    margin: 5px 0 25px 5px;
+}
+
+#Menu {
+    width: 200px;
+    margin-left: 5px;
+    float: left;	
+}
+
+#Content {
+    margin-left: 200px;	
+}
+ 
+#Footer {
+    clear: both;
+    margin: 25px 0 0 5px;
+    color: #6699cc;	
+}
+
+.titreEntete {
+    font-weight: bold;
+    font-size: 2em;
+    color: #6699cc;
+}

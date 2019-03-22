@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+{% block title %} Gestion des contrats {% endblock %}
+{% block contenu %}
+    <div id="contenu">
+        <h2>Gestion des contrats</h2>
+
+        <a href="{{ path('gerer_contrats_lister') }}">
+            Gestion des contrats
+        </a>&nbsp;
+
+        {% if (leContrat != NULL) %}
+            {% set id = leContrat.getNocontrat() %}
+            {% set date = leContrat.getDatecontrat()| date ('d-m-Y') %}
+            {% set cereale = leContrat.getCereale().getCodecereale() %}
+            {% set negociant = leContrat.getNegociant().getNonegociant()~'-'~leContrat.getNegociant().getNomnegociant() %}
+            {% set qtecde = leContrat.getQteCde() %}
+            {% set prix = leContrat.getPrixcontrat() %}
+            {% set montant = leContrat.getQteCde() * leContrat.getPrixcontrat() %}
+            {% set etat = leContrat.getEtatcontrat() %}
+            {% set livre = leContrat.getQteTotLiv() %}
+            {% set reste = leContrat.getQtecde() - leContrat.getQteTotLiv() %}
+
+            {% if (etat != 'S' and etat != 'C') %}
+
+                <a href="{{ path('gerer_contrats_modifier',
+                    {'id' : id}
+                ) }}">
+                    Modifier le contrat
+                </a>&nbsp;
+
+                <a href="{{ path('gerer_contrats_supprimer',
+                    {'id' : id}
+                ) }}">
+                    Supprimer le contrat
+                </a>
+                <br> <br>
+            {% endif %}
+
+            {% for message in app.flashes('error') %}
+                <div class="erreur">
+                    {{ message }}
+                </div>
+            {% endfor %}
+
+            {% for message in app.flashes('notice') %}
+                <div class="info">
+                    {{ message }}
+                </div>
+            {% endfor %}
+
+            <fieldset>
+                <legend>Consulter un contrat</legend>
+                <table>
+                    <tr>
+                        <td class="h-entete">ID</td>
+                        <td class="h-valeur">{{ id }}</td>
+                    </tr>
+                    <tr>
+                        <td class="h-entete">Date</td>
+                        <td class="h-valeur">{{ date }}</td>
+                    </tr>
+                    <tr>
+                        <td class="h-entete">Négociant</td>
+                        <td class="h-valeur">{{ negociant }}</td>
+                    </tr>
+                    <tr>
+                        <td class="h-entete">Céréale</td>
+                        <td class="h-valeur">{{ cereale }}</td>
+                    </tr>
+                    <tr>
+                        <td class="h-entete">Quantité</td>
+                        <td class="h-valeur">{{ qtecde }}</td>
+                    </tr>
+                    <tr>
+                        <td class="h-entete">Prix</td>
+                        <td class="h-valeur">{{ prix }}</td>
+                    </tr>
+                    <tr>
+                        <td class="h-entete">Montant</td>
+                        <td class="h-valeur">{{ montant }}</td>
+                    </tr>
+                    <tr>
+                        <td class="h-entete">Etat</td>
+                        <td class="h-valeur">{{ etat }}</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="h-entete">Livré</td>
+                        <td class="h-valeur">{{ livre }}</td>
+                    </tr>
+                    <tr>
+                        <td class="h-entete">Reste à livrer</td>
+                        <td class="h-valeur">{{ reste }}</td>
+                    </tr>
+                </table>
+                {% if (livre  != 0) %}
+                    {% include 'gerer_contrats/_livraisons.html.twig' %}
+                {% endif %}
+            </fieldset>
+        {% endif %}
+    </div>
+{% endblock %}

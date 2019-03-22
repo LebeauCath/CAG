@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+
 /**
  * Livraison
  * @ORM\Entity(repositoryClass="App\Repository\LivraisonRepository")
@@ -36,11 +37,15 @@ class Livraison
     private $qteliv;
 
     /**
-     * @var string|null
+     * @var \Silo
      *
-     * @ORM\Column(name="codesilo", type="string", length=1, nullable=true, options={"fixed"=true})
+     * @ORM\ManyToOne(targetEntity="Silo")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="codesilo", referencedColumnName="codesilo")
+     * })
      */
-    private $codesilo;
+    private $silo;
+
 
     /**
      * @var \Contrat
@@ -81,14 +86,14 @@ class Livraison
         return $this;
     }
 
-    public function getCodesilo(): ?string
+    public function getSilo(): ?Silo
     {
-        return $this->codesilo;
+        return $this->silo;
     }
 
-    public function setCodesilo(?string $codesilo): self
+    public function setSilo(?Silo $silo): self
     {
-        $this->codesilo = $codesilo;
+        $this->silo = $silo;
 
         return $this;
     }
@@ -104,6 +109,4 @@ class Livraison
 
         return $this;
     }
-
-
 }

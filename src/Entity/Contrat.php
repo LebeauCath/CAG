@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Contrat
@@ -21,9 +22,12 @@ class Contrat
      */
     private $nocontrat;
 
+
     /**
-     * @var \DateTime
+     * @var \Date
      *
+     * @Assert\Date(message = "La date n'est pas valide.")
+     * @Assert\NotBlank(message ="La date doit être saisie")
      * @ORM\Column(name="datecontrat", type="datetime", nullable=false, options={"default"="CURRENT_TIMESTAMP"})
      */
     private $datecontrat = 'CURRENT_TIMESTAMP';
@@ -31,14 +35,20 @@ class Contrat
     /**
      * @var int
      *
+     * @Assert\NotBlank(message ="La quantité doit être saisie")
+     * @Assert\Type(
+     *     type="integer",
+     *     message="Nombre entier attendu."
+     * )
      * @ORM\Column(name="qtecde", type="integer", nullable=false)
      */
     private $qtecde;
 
     /**
-     * @var float|null
+     * @var float
      *
-     * @ORM\Column(name="prixcontrat", type="decimal", precision=7, scale=2, nullable=true)
+     * @Assert\NotBlank(message ="Le prix doit être saisi")
+     * @ORM\Column(name="prixcontrat", type="decimal", precision=7, scale=2, nullable=false)
      */
     private $prixcontrat;
 
@@ -69,6 +79,18 @@ class Contrat
      */
     private $negociant;
 
+
+    /**
+     * attribut non mappé
+     * Quantité totale livrée du contrat
+     * @var int
+     * @Assert\Type(
+     *     type="integer",
+     *      message="Nombre entier attendu"
+     * )
+     */
+    private $qteTotLiv = 0;
+
     public function getNocontrat(): ?int
     {
         return $this->nocontrat;
@@ -79,7 +101,7 @@ class Contrat
         return $this->datecontrat;
     }
 
-    public function setDatecontrat(\DateTimeInterface $datecontrat): self
+    public function setDatecontrat($datecontrat): self
     {
         $this->datecontrat = $datecontrat;
 
@@ -146,5 +168,15 @@ class Contrat
         return $this;
     }
 
+    public function getQteTotLiv(): ?int
+    {
+        return $this->qteTotLiv;
+    }
 
+    public function setQteTotLiv(int $qteTotLiv): self
+    {
+        $this->qteTotLiv = $qteTotLiv;
+
+        return $this;
+    }
 }

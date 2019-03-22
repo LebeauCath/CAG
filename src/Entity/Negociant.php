@@ -26,7 +26,7 @@ class Negociant
      * @var string
      *
      * @ORM\Column(name="nomnegociant", type="string", length=50, nullable=false)
-     * @Assert\NotBlank
+     * @Assert\NotBlank(message="Veuillez saisir un nom de négociant")
      * @Assert\Length(
      *      min = 5,
      *      max = 50,
@@ -71,6 +71,4 @@ class Negociant
 
         return $this;
     }
-
-
 }

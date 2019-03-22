@@ -1,0 +1,36 @@
+<div id="objectList">
+    {% if (livraisonsDuNegociant != NULL) %}
+        <h3>Livraisons</h3>
+        <table>
+            <tr>
+                <th>Contrat</th>
+                <th>Date</th>
+                <th>Céréale</th>
+                <th>Quantité</th>
+                <th>Silo</th>
+            </tr>
+            {% set n = 0 %}
+            {% for uneLivraison in livraisonsDuNegociant %}
+                {% if((n%2) == 1) %}
+                    <tr class="impair">
+                {% else %}
+                    <tr class="pair">
+                {% endif %}
+                <td>{{ uneLivraison.getContrat().getNoContrat() }}</td>
+                <td>{{ uneLivraison.getDateliv()| date ('d-m-Y') }}</td>
+                <td>{{ uneLivraison.getContrat().getCereale().getCodeCereale }}</td>
+                <td>{{ uneLivraison.getQteliv() }}</td>
+                {% if (uneLivraison.getSilo().getCodeSilo() != NULL) %}
+                    <td> {{ uneLivraison.getSilo().getCodeSilo() }}</td>
+                {% else %}
+                    <td></td>
+                {% endif %}
+                </tr>
+
+                {% set n = n+1 %}
+            {% endfor %}
+        </table>
+    {% else %}
+        Ce client ne dispose d'aucune livraison.
+    {% endif %}
+</div>

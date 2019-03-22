@@ -1,0 +1,36 @@
+<h3>Contrats</h3>
+<div id="objectList">
+    {% if(contratsDuNegociant != NULL) %}
+        {% set nbContrats = contratsDuNegociant | length %}
+    {% endif %}
+    {%if (nbContrats > 0) %}
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Date</th>
+                <th>Céréale</th>
+                <th>Quantité</th>
+                <th>Prix</th>
+                <th>Montant</th>
+                <th>Etat</th>
+            </tr>
+            {% set n = 0 %}
+            {% for unContrat in contratsDuNegociant %}
+                {% if((n%2) == 1) %}
+                    <tr class="impair">
+                {% else %}
+                    <tr class="pair">
+                {% endif %}
+                <td>{{ unContrat.getNocontrat() }}</td>
+                <td>{{ unContrat.getDatecontrat()| date ('d-m-Y') }}</td>
+                <td>{{ unContrat.getCereale().getCodecereale() }}</td>
+                <td>{{ unContrat.getQtecde() }}</td>
+                <td>{{ unContrat.getPrixcontrat() }}</td>
+                <td>{{ unContrat.getQteCde() * unContrat.getPrixcontrat() }}</td>
+                <td>{{ unContrat.getEtatcontrat() }}</td>
+                </tr>
+                {% set n = n+1 %}
+            {% endfor %}
+        </table>
+    {% endif %}
+</div>

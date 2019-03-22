@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+{% block contenu %}
+    <div id="contenu">
+        <div id="content-container-two-column">
+            <div id="content-main-two-column">
+                <img src="{{ asset('assets/img/logo.jpg') }}" alt="" />
+                <h1>Qualité premium, des céréales de choix pour votre industrie</h1>
+                <img src="{{ asset('assets/img/photo-poster.jpg') }}" alt="" />
+                <p>
+                    Nos installations modernes et certifiées, nos produits de qualité
+                    supérieure et un personnel qualifié : jouez la synergie du
+                    spécialiste grolandais !
+                </p>
+                <div id="three-column-container">
+                    <div id="three-column-side1">
+                        <a href="#.aspx">
+                            <img src="{{ asset('assets/img/home-photo-1.jpg') }}" class="photo-border"
+                                 alt="Stockage" />
+                        </a>
+                        <h2>Le stockage</h2>
+                        <p>
+                            Nos silos, fabriqués au Groland par les spécialistes
+                            mondiaux du domaine, garantissent le maintien de la qualité
+                            dans le temps.
+                        </p>
+                        <a href="#.aspx">
+                            En savoir plus
+                        </a>
+                        <img class="arrow" src="{{ asset('assets/img/arrow.gif') }}" alt="" />
+                    </div>
+                    <div id="three-column-side2">
+                        <a href="#.aspx">
+                            <img src="{{ asset('assets/img/home-photo-3.jpg') }}" class="photo-border"
+                                 alt="Contacts" />
+                        </a>
+                        <h2>Les hommes</h2>
+                        <p>
+                            Des ingénieurs, techniciens et opérateurs au service de la
+                            qualité.
+                        </p>
+                        <a href="#.aspx">
+                            En savoir plus
+                        </a>
+                        <img class="arrow" src="{{ asset('assets/img/arrow.gif') }}" alt="" />
+                    </div>
+                    <div id="three-column-middle">
+                        <a href="#.aspx">
+                            <img src="{{ asset('assets/img/home-photo-2.jpg') }}" class="photo-border"
+                                 alt="Produits" />
+                        </a>
+                        <h2>Les produits</h2>
+                        <p>
+                            Nos producteurs vous proposent une gamme de céréales de
+                            premier choix, labelisées par AgriBio.
+                        </p>
+                        <a href="#">
+                            En savoir plus
+                        </a>
+                        <img class="arrow" src="{{ asset('assets/img/arrow.gif') }}" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-side-two-column">
+                <h2>
+                    <a href="#">Actualités</a>
+                </h2>
+                <ul class="list-of-links">
+                    <li>
+                        <a href="#">BioGro cité dans Le Moode</a><br />
+                        Dans un article du 20 décembre dernier, le quotidien
+                        Le Moode a publié un reportage sur notre établissement,
+                        mettant l'accent sur la qualité de nos productions et de
+                        nos services.
+                        <img src="{{ asset('assets/img/moode.gif') }}" />
+                    </li>
+                    <li>
+                        <a href="#">Visite de notre Président</a>
+                        <img src="{{ asset('assets/img/president.jpg') }}" />
+                    </li>
+                    <li>
+                        <a href="#">
+                            Production de maïs en forte augmentation en 2014
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Certification IGRO 2001 pour notre contrôle qualité
+                        </a><br /><br />
+                        <img src="{{ asset('assets/img/qualite.gif') }}" />
+                    </li>
+            </div>
+            <div id="Adresse" class="clear">
+                <strong>BioGro - Coopérative Agricole de Groville</strong><br />
+                08 55 01 32 10 <br />
+                Route de Glumotte <br />
+                Bouzeux-lès-Groville<br />
+                GROLAND<br />
+                <a href="#">plan d'accès</a>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

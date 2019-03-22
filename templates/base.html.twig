@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}CAG - Coopérative Agricole de Groville {% endblock %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{asset('assets/styles/screen.css')}}" />
+        <link rel="stylesheet" href="{{asset('assets/styles/coop.css')}}" />
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+<div id="Header">
+    <hr />
+    <div>
+        <span class="titreEntete"> Intranet de la Coopérative Agricole de Groville</span>
+    </div>
+    <hr />
+</div>
+<!-- Division pour le menu -->
+<div id="nav">
+    <div id="infosUtil">
+        {%if(app.session.get('nom') is defined )%}
+            Connecté : {{app.session.get('nom')}} {{app.session.get('prenom')}}<br>
+        {%endif%}
+    </div>
+    <div id="menuGauche">
+        <ul id="menuList">
+            <li class="smenu">
+                <a href="{{ path('cag_home') }}"
+                   title="Accueil">Accueil
+                </a>
+            </li>
+            <li class="smenu">
+                <a href="{{ path('gerer_negociants_lister') }}"
+                   title="Négociants">Gestion des négociants
+                </a>
+            </li>
+            <li class="smenu">
+                <a href="{{ path('gerer_contrats_lister') }}"
+                   title="Contrats">Gestion des contrats
+                </a>
+            </li>
+            <li class="smenu">
+                <a href="{{ path('gerer_livraisons_lister') }}"
+                   title="Livraisons">Gestion des livraisons
+                </a>
+            </li>
+            <li class="smenu">
+                <a href="#"
+                   title="Se déconnecter">Déconnexion
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Contenu des pages qui héritent-->
+{% block contenu %}
+
+{% endblock %}
+
+<div id="Footer">
+    <hr />
+    Intranet - BioGro, Coopérative Agricole de Groville<br />
+    &copy; dkSoft
+</div>
+{% endblock %}
         {% block javascripts %}{% endblock %}
-    </body>
+</body>
 </html>

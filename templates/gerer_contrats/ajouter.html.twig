@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+{% block title %} Gestion des contrats{% endblock %}
+{% block contenu %}
+
+    <div id="contenu">
+        {% for message in app.flashes('error') %}
+            <div class="erreur">
+                {{ message }}
+            </div>
+        {% endfor %}
+        <h2>Gestion des contrats</h2>
+        <a href="{{ path('gerer_contrats_lister') }}">
+            Gestion des contrats
+        </a>&nbsp;
+        <br/><br/>
+        {# Générer la balise form et ses attributs #}
+
+        {# En mode production désactivation des validations html : test des contrôles côté serveur #}
+        {{ form_start(formContrat, {'attr': {'novalidate': 'novalidate'}}) }}
+
+        <div class="corpsForm">
+            <fieldset>
+                <legend>Ajouter un contrat</legend>
+                <table>
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formContrat) }} </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formContrat.datecontrat) }}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form_label(formContrat.datecontrat) }}
+                        </td>
+                        <td>
+                            {{ form_widget(formContrat.datecontrat) }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formContrat.negociant) }}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form_label(formContrat.negociant) }}
+                        </td>
+                        <td>
+                            {{ form_widget(formContrat.negociant) }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formContrat.cereale) }}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form_label(formContrat.cereale) }}
+                        </td>
+                        <td>
+                            {{ form_widget(formContrat.cereale) }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formContrat.qtecde) }}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form_label(formContrat.qtecde) }}
+                        </td>
+                        <td>
+                            {{ form_widget(formContrat.qtecde) }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formContrat.prixcontrat) }}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form_label(formContrat.prixcontrat) }}
+                        </td>
+                        <td>
+                            {{ form_widget(formContrat.prixcontrat) }}
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </div>
+        <div class="piedForm">
+            <p>
+                <input id="cmdFonction" name="cmdFonction"
+                       type="submit"
+                       value="Ajouter" size="15"
+                />
+            </p>
+        </div>
+        {{ form_end(formContrat) }}
+    </div>
+{% endblock %}

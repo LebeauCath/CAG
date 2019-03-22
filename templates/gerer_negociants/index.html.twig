@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+{% block title %} Gestion des négociants{% endblock %}
+{% block contenu %}
+    <div id="contenu">
+        {% for message in app.flashes('error') %}
+            <div class="erreur">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+        {% for message in app.flashes('notice') %}
+            <div class="info">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+        <h2>Gestion des négociants</h2>
+
+        <a href="{{ path('gerer_negociants_ajouter') }}">
+            Ajouter un négociant
+        </a>
+
+        <br /><br />
+        <div class="corpsForm">
+            <!--- afficher la liste des négociants -->
+            <fieldset>
+                <legend>Négociants</legend>
+                <div id="objectList">
+
+                    {# afficher le nombre de négociants #}
+                    {% set  nbNegociants = 0 %}
+                    {% if lesNegociants != NULL %}
+                        {% set  nbNegociants = lesNegociants | length %}
+                        <span> {{  nbNegociants }}  négociant(s) trouvé(s)  </span>
+                        {# création du tableau#}
+                        <table>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nom</th>
+                            </tr>
+                            {#  affichage des lignes du tableau #}
+                            {% set n = 0 %}
+                            {%  for unNegociant in lesNegociants %}
+                                {% if  ((n % 2) == 1) %}
+                                    <tr class="impair">
+                                {% else %}
+                                    <tr class="pair">
+                                {% endif %}
+                                {# afficher la 1ère colonne dans un hyperlien #}
+                                <td><a href="{{ path('gerer_negociants_consulter', {'id' : unNegociant.getNonegociant() }) }}">{{ unNegociant.getNonegociant() }}  </a></td>
+                                <td>{{ unNegociant.getNomnegociant() }} </td>
+                                </tr>
+                                {% set  n = n+1 %}
+                            {% endfor %}
+                        </table>
+                    {% else %}
+                        Pas de négociants
+                    {% endif %}
+                </div>
+            </fieldset>
+        </div>
+    </div>
+{% endblock %}

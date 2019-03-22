@@ -1,0 +1,151 @@
+{% extends 'base.html.twig' %}
+{% block title %} Gestion des livraisons{% endblock %}
+{% block contenu %}
+    <div id="contenu">
+        {% for message in app.flashes('error') %}
+            <div class="erreur">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+        <h2>Gestion des livraisons</h2>
+        <a href="{{ path('gerer_livraisons_lister') }}">
+            Gestion des livraisons
+        </a>&nbsp;
+        <br/><br/>
+
+        {# Générer la balise form et ses attributs #}
+        {# En mode production désactivation des validations html : test des contrôles côté serveur #}
+        {{ form_start(formLivraison, {'attr': {'novalidate': 'novalidate'}}) }}
+        {#{{ form_start(formLivraison) }}#}
+
+
+        <div class="corpsForm">
+            <fieldset>
+                <legend>Ajouter une livraison</legend>
+                <table>
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formLivraison) }} </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="txtIdContrat">
+                                Contrat :
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text" id="txtIdContrat"
+                                   name="txtIdContrat"
+                                   size="10" maxlength="10"
+                                   value= {{ leContrat.getNocontrat() }}
+                                   readonly="readonly"
+                            />
+                        </td>
+                    </tr>
+
+                    {# <tr>
+                         <td>
+                             {{ form_label(formLivraison.contrat) }}
+                         </td>
+                         <td>
+                             {{ form_widget(formLivraison.contrat) }}
+                         </td>
+                     </tr>#}
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formLivraison.dateliv) }}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form_label(formLivraison.dateliv) }}
+                        </td>
+                        <td>
+                            {{ form_widget(formLivraison.dateliv) }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> {{ form_errors(formLivraison.qteliv) }}</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            {{ form_label(formLivraison.qteliv) }}
+                        </td>
+                        <td>
+                            {{ form_widget(formLivraison.qteliv) }}
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            {{ form_label(formLivraison.silo) }}
+                        </td>
+                        <td>
+                            {{ form_widget(formLivraison.silo) }}
+                        </td>
+                    </tr>
+                    {#
+                     <tr>
+                         <td valign="top">
+                             <label for="cbxSilo">
+                                 Silo :
+                             </label>
+                         </td>
+                         <td>
+                             <select name='cbxSilo'
+                                     id='cbxSilo'
+                                     size=1
+                             >
+                                 {% for unSilo in lesSilos %}
+                                     <option value='{{ unSilo.getCodesilo() }}'> {{ unSilo.getCodesilo() }}
+                                     </option>
+                                 {% endfor %}
+                             </select>
+                         </td>
+                     </tr> #}
+                    {#
+
+
+                                        <tr>
+                                            <td>
+                                                <label for="txtDate">
+                                                    Date :
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="text" id="txtDate"
+                                                    name="txtDate"
+                                                    size="10" maxlength="10"
+                                                    value= {{"now"|date("Y/m/d")}}
+                                                />
+                                            </td>
+                                        </tr>
+                                         <tr>
+                                            <td>
+                                                <label for="txtQteLiv">
+                                                    Quantité à livrer :
+                                                </label>
+                                            </td>
+                                            <td>
+                                                <input type="number" id="txtQteLiv"
+                                                    name="txtQteLiv"
+                                                    max = "{{qteMax}}"
+                                                    min = "{{0}}"
+                                                    value = "{{qteMax}}"
+                                                />
+                                            </td>
+                                        </tr>
+
+                                        #}
+                </table>
+            </fieldset>
+        </div>
+        <div class="piedForm">
+            <p>
+                <input id="cmdFonction" name="cmdFonction"
+                       type="submit"
+                       value="Ajouter" size="15"
+                />
+            </p>
+        </div>
+        {{ form_end(formLivraison) }}
+    </div>
+{% endblock %}

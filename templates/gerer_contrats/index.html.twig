@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+{% block title %} Gestion des contrats {% endblock %}
+{% block contenu %}
+    <div id="contenu">
+        {% for message in app.flashes('error') %}
+            <div class="erreur">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+        {% for message in app.flashes('notice') %}
+            <div class="info">
+                {{ message }}
+            </div>
+        {% endfor %}
+
+        <h2>Gestion des contrats</h2>
+
+        <a href="{{ path('gerer_contrats_ajouter') }}">
+            Ajouter un contrat
+        </a>
+
+        <br/><br/>
+        <div class="corpsForm">
+            <!--- afficher la liste des contrats -->
+            <fieldset>
+                <legend>Contrats</legend>
+                <div id="objectList">
+                    {% set nbContrats = 0 %}
+
+                    {#afficher le nombre de contrats#}
+                    {% if (lesContrats != NULL) %}
+                        {% set nbContrats = lesContrats | length %}
+                    {% endif %}
+
+                    <span> {{ nbContrats }} contrat(s) trouvé(s)</span><br/><br/>
+                    {% if (nbContrats > 0) %}
+                        {# création du tableau #}
+                        <table>
+                            {# affichage de l'entete du tableau #}
+                            <tr>
+                                <th>ID</th>
+                                <th>Date</th>
+                                <th>Negociant</th>
+                                <th>Cereale</th>
+                                <th>Commande</th>
+                                <th>Livre</th>
+                                <th>Reste</th>
+                                <th>Prix</th>
+                                <th>Montant</th>
+                                <th>Etat</th>
+                            </tr>
+                            {# affichage des lignes du tableau #}
+                            {% set n = 0 %}
+                            {% for unContrat in lesContrats %}
+                                {% if ((n % 2) == 1) %}
+                                    <tr class="impair">
+                                {% else %}
+                                    <tr class="pair">
+                                {% endif %}
+                                {# affichage des lignes du tableau #}
+                                {# afficher la 1ère colonne dans un hyperlien #}
+                                {% set id = unContrat.getNocontrat() %}
+                                <td><a href="{{ path('gerer_contrats_consulter',
+                                        {'id' : id}) }}">
+                                        {{ id }}
+                                    </a></td>
+                                {# <td>{{unContrat.ID}}</td>#}
+                                {#  afficher les colonnes suivantes #}
+                                <td>{{ unContrat.getDatecontrat() | date('d-m-Y') }}</td>
+                                <td>{{ unContrat.getNegociant().getNomnegociant() }}  </td>
+                                <td>{{ unContrat.getCereale().getVariete() }}</td>
+                                <td>{{ unContrat.getQtecde() }}</td>
+                                <td>{{ unContrat.getQteTotLiv() }}</td>
+                                <td>{{ unContrat.getQtecde() - unContrat.getQteTotLiv() }}</td>
+                                <td>{{ unContrat.getPrixcontrat() }}</td>
+                                <td>{{ unContrat.getPrixcontrat() * unContrat.getQtecde() }}</td>
+                                <td>{{ unContrat.getEtatcontrat() }}</td>
+                                </tr>
+                                {% set n = n+1 %}
+                            {% endfor %}
+                        </table>
+                    {% else %}
+                        Pas de contrat trouvé
+                    {% endif %}
+                </div>
+            </fieldset>
+        </div>
+    </div>
+{% endblock %}
