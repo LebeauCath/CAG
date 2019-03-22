@@ -42,15 +42,6 @@
                             />
                         </td>
                     </tr>
-
-                    {# <tr>
-                         <td>
-                             {{ form_label(formLivraison.contrat) }}
-                         </td>
-                         <td>
-                             {{ form_widget(formLivraison.contrat) }}
-                         </td>
-                     </tr>#}
                     <tr>
                         <td colspan="2"> {{ form_errors(formLivraison.dateliv) }}</td>
                     </tr>
@@ -82,59 +73,6 @@
                             {{ form_widget(formLivraison.silo) }}
                         </td>
                     </tr>
-                    {#
-                     <tr>
-                         <td valign="top">
-                             <label for="cbxSilo">
-                                 Silo :
-                             </label>
-                         </td>
-                         <td>
-                             <select name='cbxSilo'
-                                     id='cbxSilo'
-                                     size=1
-                             >
-                                 {% for unSilo in lesSilos %}
-                                     <option value='{{ unSilo.getCodesilo() }}'> {{ unSilo.getCodesilo() }}
-                                     </option>
-                                 {% endfor %}
-                             </select>
-                         </td>
-                     </tr> #}
-                    {#
-
-
-                                        <tr>
-                                            <td>
-                                                <label for="txtDate">
-                                                    Date :
-                                                </label>
-                                            </td>
-                                            <td>
-                                                <input type="text" id="txtDate"
-                                                    name="txtDate"
-                                                    size="10" maxlength="10"
-                                                    value= {{"now"|date("Y/m/d")}}
-                                                />
-                                            </td>
-                                        </tr>
-                                         <tr>
-                                            <td>
-                                                <label for="txtQteLiv">
-                                                    Quantité à livrer :
-                                                </label>
-                                            </td>
-                                            <td>
-                                                <input type="number" id="txtQteLiv"
-                                                    name="txtQteLiv"
-                                                    max = "{{qteMax}}"
-                                                    min = "{{0}}"
-                                                    value = "{{qteMax}}"
-                                                />
-                                            </td>
-                                        </tr>
-
-                                        #}
                 </table>
             </fieldset>
         </div>

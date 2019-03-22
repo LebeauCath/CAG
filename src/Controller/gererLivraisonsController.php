@@ -105,12 +105,7 @@ class gererLivraisonsController extends AbstractController
         if (!$laLivraison) {
 
             $cereale = $leContrat->getCereale();
-            // ai passé beaucoup de temps à résoudre un pb que je n'avais pas au début
-            // lié à la double mention
-            // $lesSilos = $repoSilo->getLesSilos($cereale);
-            //dump($lesSilos);
             $lesSilos = $repo->getLesSilos($cereale, $repoSilo);
-            dump($lesSilos);
             $laLivraison = new Livraison();
             $laLivraison->setContrat($leContrat);
             $laLivraison->setDateliv(new \DateTime());

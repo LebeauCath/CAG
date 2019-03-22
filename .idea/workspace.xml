@@ -1,61 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a760c324-7df3-4df7-8f3e-e7689a363cc6" name="Default Changelist" comment="Fonctionnalité lister et ajouter">
-      <change afterPath="$PROJECT_DIR$/.idea/CAG.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/arrow.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/bg-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/bg-content-side.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/bg-nav-side.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/bg-nav.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/bg-photo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/bg-quote.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/bg-three-column-home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/bg-three-column-main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/corp_blue_arrow.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/home-photo-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/home-photo-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/home-photo-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/moode.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/photo-poster.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/president.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/img/qualite.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/styles/coop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/styles/screen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AccueilController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/GererNegociantsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Apport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/CoeffQualite.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Fournisseur.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Virement.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ContratEditType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/NegociantType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/accueil/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gerer_contrats/_livraisons.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gerer_contrats/modifier.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gerer_livraisons/_livraisons.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gerer_livraisons/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gerer_negociants/ajouter.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gerer_negociants/consulter.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gerer_negociants/contratsDuNegociant.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gerer_negociants/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gerer_negociants/livraisonsDuNegociant.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/gerer_negociants/modifier.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Contrat.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Contrat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Livraison.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Livraison.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Negociant.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Negociant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ContratRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ContratRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/LivraisonRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/LivraisonRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/SiloRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/SiloRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+    <list default="true" id="a760c324-7df3-4df7-8f3e-e7689a363cc6" name="Default Changelist" comment="Fin du projet">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/gererLivraisonsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/gererLivraisonsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_bll.lib.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/gerer_livraisons/ajouter.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/gerer_livraisons/ajouter.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,44 +46,104 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="env" value="3" />
+          <entry key="env" value="4" />
           <entry key="gitignore" value="1" />
-          <entry key="php" value="152" />
-          <entry key="twig" value="113" />
+          <entry key="php" value="158" />
+          <entry key="twig" value="118" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="152" />
+          <entry key=".env file" value="1" />
+          <entry key="PHP" value="158" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Twig" value="113" />
+          <entry key="Twig" value="118" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="env" value="18" />
-          <entry key="php" value="7947" />
-          <entry key="twig" value="2181" />
-          <entry key="txt" value="44" />
+          <entry key="env" value="23" />
+          <entry key="php" value="7950" />
+          <entry key="twig" value="2187" />
+          <entry key="txt" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="7947" />
-          <entry key="PLAIN_TEXT" value="66" />
-          <entry key="Twig" value="2181" />
+          <entry key=".env file" value="5" />
+          <entry key="PHP" value="7950" />
+          <entry key="PLAIN_TEXT" value="79" />
+          <entry key="Twig" value="2187" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/gererContratsController.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+            <state relative-caret-position="102">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/gererLivraisonsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="655">
+              <caret line="200" column="15" selection-start-line="200" selection-start-column="15" selection-end-line="200" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/recap_ajout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/ajouter.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1479">
+              <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
+              <folding>
+                <element signature="e#12#26#0#Twig" expanded="true" />
+                <element signature="e#427#433#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/_livraisons.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/consulter.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="453">
+              <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -142,6 +154,7 @@
     <findStrings>
       <find>ligneunContrat</find>
       <find>²</find>
+      <find>dump</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -150,7 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/src/Entity/Fournisseur.php" />
         <option value="$PROJECT_DIR$/src/Entity/CoeffQualite.php" />
         <option value="$PROJECT_DIR$/src/Entity/Virement.php" />
@@ -164,7 +176,6 @@
         <option value="$PROJECT_DIR$/templates/gerer_livraisons/1index.html.twig" />
         <option value="$PROJECT_DIR$/templates/gerer_contrats/consulter.html.twig" />
         <option value="$PROJECT_DIR$/templates/gerer_livraisons/_livraisons.html.twig" />
-        <option value="$PROJECT_DIR$/templates/gerer_livraisons/consulter.html.twig" />
         <option value="$PROJECT_DIR$/src/Repository/SiloRepository.php" />
         <option value="$PROJECT_DIR$/templates/gerer_negociants/ajouter.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Negociant.php" />
@@ -172,7 +183,6 @@
         <option value="$PROJECT_DIR$/templates/gerer_contrats/modifier.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/GererNegociantsController.php" />
         <option value="$PROJECT_DIR$/src/Controller/gererContratsController.php" />
-        <option value="$PROJECT_DIR$/src/Controller/gererLivraisonsController.php" />
         <option value="$PROJECT_DIR$/src/Entity/Cereale.php" />
         <option value="$PROJECT_DIR$/src/Entity/Contrat.php" />
         <option value="$PROJECT_DIR$/src/Entity/Livraison.php" />
@@ -183,13 +193,17 @@
         <option value="$PROJECT_DIR$/templates/gerer_contrats/recap_ajout.html.twig" />
         <option value="$PROJECT_DIR$/templates/gerer_contrats/_livraisons.html.twig" />
         <option value="$PROJECT_DIR$/templates/gerer_livraisons/index.html.twig" />
-        <option value="$PROJECT_DIR$/templates/gerer_livraisons/ajouter.html.twig" />
         <option value="$PROJECT_DIR$/templates/gerer_livraisons/recap_ajout.html.twig" />
         <option value="$PROJECT_DIR$/src/Form/NegociantType.php" />
         <option value="$PROJECT_DIR$/src/Form/ContratType.php" />
         <option value="$PROJECT_DIR$/src/Form/ContratEditType.php" />
         <option value="$PROJECT_DIR$/src/Form/LivraisonType.php" />
         <option value="$PROJECT_DIR$/src/Repository/ContratRepository.php" />
+        <option value="$PROJECT_DIR$/public/check.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/src/Controller/gererLivraisonsController.php" />
+        <option value="$PROJECT_DIR$/templates/gerer_livraisons/ajouter.html.twig" />
+        <option value="$PROJECT_DIR$/templates/gerer_livraisons/consulter.html.twig" />
       </list>
     </option>
   </component>
@@ -329,37 +343,7 @@
             <path>
               <item name="CAG" type="b2602c69:ProjectViewProjectNode" />
               <item name="CAG" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CAG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CAG" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CAG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CAG" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CAG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CAG" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CAG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CAG" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="accueil" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CAG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CAG" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="gerer_contrats" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CAG" type="b2602c69:ProjectViewProjectNode" />
@@ -369,9 +353,7 @@
             </path>
             <path>
               <item name="CAG" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CAG" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="gerer_negociants" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -439,7 +421,7 @@
       <workItem from="1550738118139" duration="16323000" />
       <workItem from="1551640069488" duration="7000" />
       <workItem from="1552922032806" duration="1212000" />
-      <workItem from="1553253021745" duration="236000" />
+      <workItem from="1553253021745" duration="4803000" />
     </task>
     <task id="LOCAL-00001" summary="Fonctionnalité lister et ajouter">
       <created>1544714155562</created>
@@ -452,7 +434,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="218621000" />
+    <option name="totallyTimeSpent" value="223188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -551,13 +533,6 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/accueil/index.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -567,13 +542,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="44" column="50" selection-start-line="44" selection-start-column="50" selection-end-line="44" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/_livraisons.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -596,13 +564,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="82" column="28" selection-end-line="195" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/gererLivraisonsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="206" column="9" selection-start-line="206" selection-start-column="9" selection-end-line="206" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -725,52 +686,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="59" column="70" selection-end-line="85" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/ajouter.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="18" selection-end-line="151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/consulter.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/recap_ajout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="39" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/NegociantType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="29" column="5" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/ContratType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-321">
-          <caret line="8" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/ContratEditType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -798,10 +717,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/form/Extension/Core/Type/FormType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2336" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/ContratType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+          <folding>
+            <element signature="e#28#51#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Form/ContratEditType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/gererContratsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
+        <state relative-caret-position="501">
           <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/check.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_bll.lib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/gererLivraisonsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="200" column="15" selection-start-line="200" selection-start-column="15" selection-end-line="200" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/ajouter.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+            <element signature="e#427#433#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/_livraisons.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/consulter.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/gerer_livraisons/recap_ajout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
         </state>
       </provider>
     </entry>
