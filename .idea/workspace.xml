@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a760c324-7df3-4df7-8f3e-e7689a363cc6" name="Default Changelist" comment="Fin du projet">
-      <change afterPath="$PROJECT_DIR$/.platform.app.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.platform/routes.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.platform/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_bll.lib.php" beforeDir="false" />
-    </list>
+    <list default="true" id="a760c324-7df3-4df7-8f3e-e7689a363cc6" name="Default Changelist" comment="Fin du projet" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,25 +78,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.platform.app.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+            <state relative-caret-position="162">
+              <caret line="15" column="4" selection-start-line="15" selection-end-line="15" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.platform/routes.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.platform/services.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -370,7 +355,7 @@
       <workItem from="1550738118139" duration="16323000" />
       <workItem from="1551640069488" duration="7000" />
       <workItem from="1552922032806" duration="1212000" />
-      <workItem from="1553253021745" duration="6491000" />
+      <workItem from="1553253021745" duration="7140000" />
     </task>
     <task id="LOCAL-00001" summary="Fonctionnalité lister et ajouter">
       <created>1544714155562</created>
@@ -383,7 +368,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224876000" />
+    <option name="totallyTimeSpent" value="225525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -753,10 +738,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.platform.app.yaml">
+    <entry file="file://$PROJECT_DIR$/.platform/services.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -767,10 +752,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.platform/services.yaml">
+    <entry file="file://$PROJECT_DIR$/.platform.app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="162">
+          <caret line="15" column="4" selection-start-line="15" selection-end-line="15" selection-end-column="4" />
         </state>
       </provider>
     </entry>
