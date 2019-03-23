@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a760c324-7df3-4df7-8f3e-e7689a363cc6" name="Default Changelist" comment="Fin du projet">
+      <change afterPath="$PROJECT_DIR$/composer.jsonCOPY" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/sh" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +47,10 @@
           <entry key="env" value="6" />
           <entry key="envCOPY" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="json" value="1" />
+          <entry key="json" value="2" />
+          <entry key="jsonCOPY" value="2" />
           <entry key="php" value="158" />
+          <entry key="sh" value="1" />
           <entry key="twig" value="118" />
           <entry key="yaml" value="3" />
         </counts>
@@ -57,9 +58,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="4" />
-          <entry key="JSON" value="1" />
+          <entry key="JSON" value="2" />
           <entry key="PHP" value="158" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="Twig" value="118" />
           <entry key="YAML" value="3" />
         </counts>
@@ -68,6 +69,8 @@
         <counts>
           <entry key="dummy" value="4" />
           <entry key="env" value="23" />
+          <entry key="json" value="17" />
+          <entry key="jsonCOPY" value="37" />
           <entry key="php" value="7950" />
           <entry key="twig" value="2187" />
           <entry key="txt" value="57" />
@@ -77,8 +80,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="5" />
+          <entry key="JSON" value="17" />
           <entry key="PHP" value="7950" />
-          <entry key="PLAIN_TEXT" value="79" />
+          <entry key="PLAIN_TEXT" value="116" />
           <entry key="Twig" value="2187" />
           <entry key="YAML" value="1" />
         </counts>
@@ -93,13 +97,6 @@
             <state relative-caret-position="-142">
               <caret line="15" column="4" selection-start-line="15" selection-end-line="15" selection-end-column="4" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-204" />
           </provider>
         </entry>
       </file>
@@ -122,6 +119,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.jsonCOPY">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -186,6 +201,9 @@
         <option value="$PROJECT_DIR$/.platform.app.yaml" />
         <option value="$PROJECT_DIR$/.platform/routes.yaml" />
         <option value="$PROJECT_DIR$/.platform/services.yaml" />
+        <option value="$PROJECT_DIR$/bin/sh" />
+        <option value="$PROJECT_DIR$/composer.jsonCOPY" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -319,7 +337,7 @@
             <path>
               <item name="CAG" type="b2602c69:ProjectViewProjectNode" />
               <item name="CAG" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CAG" type="b2602c69:ProjectViewProjectNode" />
@@ -391,7 +409,7 @@
       <workItem from="1550738118139" duration="16323000" />
       <workItem from="1551640069488" duration="7000" />
       <workItem from="1552922032806" duration="1212000" />
-      <workItem from="1553253021745" duration="8509000" />
+      <workItem from="1553253021745" duration="12774000" />
     </task>
     <task id="LOCAL-00001" summary="Fonctionnalité lister et ajouter">
       <created>1544714155562</created>
@@ -404,7 +422,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226894000" />
+    <option name="totallyTimeSpent" value="231159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -465,16 +483,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Fonctionnalité lister et ajouter" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Repository/CerealeRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/accueil/index.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -780,9 +788,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.jsonCOPY">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204" />
+        <state relative-caret-position="391">
+          <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
+        </state>
       </provider>
     </entry>
   </component>
