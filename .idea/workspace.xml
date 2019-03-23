@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a760c324-7df3-4df7-8f3e-e7689a363cc6" name="Default Changelist" comment="Fin du projet">
-      <change afterPath="$PROJECT_DIR$/composer.jsonCOPY" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/sh" beforeDir="false" />
     </list>
@@ -19,7 +18,7 @@
     <session id="136294570">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="20" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="2" />
@@ -126,17 +125,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
+            <state relative-caret-position="1054">
               <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.jsonCOPY">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="69" column="9" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -409,7 +399,7 @@
       <workItem from="1550738118139" duration="16323000" />
       <workItem from="1551640069488" duration="7000" />
       <workItem from="1552922032806" duration="1212000" />
-      <workItem from="1553253021745" duration="12774000" />
+      <workItem from="1553253021745" duration="13383000" />
     </task>
     <task id="LOCAL-00001" summary="Fonctionnalité lister et ajouter">
       <created>1544714155562</created>
@@ -422,11 +412,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231159000" />
+    <option name="totallyTimeSpent" value="231768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.67351127" visible="true" weight="0.28016195" />
       <window_info id="Structure" order="1" sideWeight="0.3264887" side_tool="true" weight="0.14574899" />
@@ -804,7 +793,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="1054">
           <caret line="71" column="17" lean-forward="true" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
         </state>
       </provider>
