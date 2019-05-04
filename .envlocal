@@ -14,7 +14,6 @@ APP_SECRET=16d5e8a5676a76bd079def7ca29a94d7
 # Format described at http://docs.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/configuration.html#connecting-using-a-url
 # For an SQLite database, use: "sqlite:///%kernel.project_dir%/var/data.db"
 # Configure your db driver and server_version in config/packages/doctrine.yaml
-#DATABASE_URL=mysql://dbu61262:1&1Marantemm57@db5000033272.hosting-data.io:3306/dbs28386
 DATABASE_URL=mysql://root:@127.0.0.1:3306/gro_coop
 ###< doctrine/doctrine-bundle ###
 

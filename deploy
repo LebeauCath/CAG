@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -av ./ u96933246@access778852778.webspace-data.io:~/bmg --include=public/build --include=vendor --exclude-from=var --exclude-from=".*"  
